@@ -47,6 +47,14 @@
             this.textP2Name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textDef1 = new System.Windows.Forms.TextBox();
+            this.textAtk1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textDef2 = new System.Windows.Forms.TextBox();
+            this.textAtk2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -147,6 +155,7 @@
             this.button6.TabIndex = 4;
             this.button6.Text = "DEF + 50";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -156,6 +165,7 @@
             this.button7.TabIndex = 3;
             this.button7.Text = "HP +50";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label1
             // 
@@ -240,11 +250,91 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Name";
             // 
+            // textDef1
+            // 
+            this.textDef1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textDef1.Location = new System.Drawing.Point(343, 62);
+            this.textDef1.Name = "textDef1";
+            this.textDef1.Size = new System.Drawing.Size(130, 23);
+            this.textDef1.TabIndex = 18;
+            // 
+            // textAtk1
+            // 
+            this.textAtk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textAtk1.Location = new System.Drawing.Point(343, 17);
+            this.textAtk1.Name = "textAtk1";
+            this.textAtk1.Size = new System.Drawing.Size(130, 23);
+            this.textAtk1.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(268, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 30);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Def";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(268, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 30);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Atk";
+            // 
+            // textDef2
+            // 
+            this.textDef2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textDef2.Location = new System.Drawing.Point(736, 59);
+            this.textDef2.Name = "textDef2";
+            this.textDef2.Size = new System.Drawing.Size(130, 23);
+            this.textDef2.TabIndex = 22;
+            // 
+            // textAtk2
+            // 
+            this.textAtk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textAtk2.Location = new System.Drawing.Point(736, 14);
+            this.textAtk2.Name = "textAtk2";
+            this.textAtk2.Size = new System.Drawing.Size(130, 23);
+            this.textAtk2.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(661, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 30);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Def";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(661, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 30);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Atk";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1129, 491);
+            this.Controls.Add(this.textDef2);
+            this.Controls.Add(this.textAtk2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textDef1);
+            this.Controls.Add(this.textAtk1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textP2Hp);
             this.Controls.Add(this.textP2Name);
             this.Controls.Add(this.label3);
@@ -290,5 +380,13 @@
         private TextBox textP2Name;
         private Label label3;
         private Label label4;
+        private TextBox textDef1;
+        private TextBox textAtk1;
+        private Label label5;
+        private Label label6;
+        private TextBox textDef2;
+        private TextBox textAtk2;
+        private Label label7;
+        private Label label8;
     }
 }

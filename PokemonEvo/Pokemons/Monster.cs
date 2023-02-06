@@ -13,10 +13,10 @@ namespace PokemonEvo
             this.Name = "Mons";
             Random random = new Random();
             //random number between >= 200 and <295
-            this.HP = random.Next(800, 1294);
+            this.HP = random.Next(200, 295);
             this._image = Properties.Resources._005;
-            this.Atk = random.Next(85, 174);
-            this.Defense = random.Next(67, 185);
+            this.Atk = random.Next(100, 150);
+            this.Defense = random.Next(80, 185);
         }
     }
 }

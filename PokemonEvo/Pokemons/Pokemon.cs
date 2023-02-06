@@ -37,9 +37,18 @@ namespace PokemonEvo
             }
             else
             {
-                HP = 0;
+                damage = 0;
             }
             
+            
+        }
+        public void IncreaseHP(int amount)
+        {
+            HP += amount;
+        }
+        public void IncreaseDef(int number)
+        {
+            Defense = number;
         }
 
     }
